@@ -1,0 +1,15 @@
+C:\Users\masoo\source\repos\AppContacts\AppContacts\AppContacts\bin\Debug\netstandard2.0\AppContacts.deps.json
+C:\Users\masoo\source\repos\AppContacts\AppContacts\AppContacts\bin\Debug\netstandard2.0\AppContacts.dll
+C:\Users\masoo\source\repos\AppContacts\AppContacts\AppContacts\bin\Debug\netstandard2.0\ref\AppContacts.dll
+C:\Users\masoo\source\repos\AppContacts\AppContacts\AppContacts\bin\Debug\netstandard2.0\AppContacts.pdb
+C:\Users\masoo\source\repos\AppContacts\AppContacts\AppContacts\obj\Debug\netstandard2.0\AppContacts.csprojAssemblyReference.cache
+C:\Users\masoo\source\repos\AppContacts\AppContacts\AppContacts\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\masoo\source\repos\AppContacts\AppContacts\AppContacts\obj\Debug\netstandard2.0\MainDisplayPage.xaml.g.cs
+C:\Users\masoo\source\repos\AppContacts\AppContacts\AppContacts\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\masoo\source\repos\AppContacts\AppContacts\AppContacts\obj\Debug\netstandard2.0\AppContacts.AssemblyInfoInputs.cache
+C:\Users\masoo\source\repos\AppContacts\AppContacts\AppContacts\obj\Debug\netstandard2.0\AppContacts.AssemblyInfo.cs
+C:\Users\masoo\source\repos\AppContacts\AppContacts\AppContacts\obj\Debug\netstandard2.0\AppContacts.csproj.CoreCompileInputs.cache
+C:\Users\masoo\source\repos\AppContacts\AppContacts\AppContacts\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\masoo\source\repos\AppContacts\AppContacts\AppContacts\obj\Debug\netstandard2.0\AppContacts.dll
+C:\Users\masoo\source\repos\AppContacts\AppContacts\AppContacts\obj\Debug\netstandard2.0\ref\AppContacts.dll
+C:\Users\masoo\source\repos\AppContacts\AppContacts\AppContacts\obj\Debug\netstandard2.0\AppContacts.pdb
