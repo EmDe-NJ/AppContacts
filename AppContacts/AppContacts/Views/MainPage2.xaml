@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Picker with MVVM"
+             x:Class="AppContacts.Views.MainPage2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Select a city" FontSize="Medium" TextColor="Blue" />
+            <Picker Title="--Select--" ItemsSource="{Binding ListCities}" ItemDisplayBinding="{Binding Value}" SelectedItem="{Binding SelectedCity}" />
+            <!--<ListView x:Name="ContactList" HasUnevenRows="True"  IsVisible="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" VerticalOptions="Center" >-->
+                                <Label Text="{Binding CityText}" TextColor="OrangeRed" />
+                            <!--</StackLayout>-->
+                        <!--</ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

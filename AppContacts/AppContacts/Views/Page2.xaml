@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppContacts.Views.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="LblDisplay" Text="Select a Field" FontSize="Medium" TextColor="Blue" />
+            <Picker Title="Select --" ItemsSource="{Binding ListContacts}" ItemDisplayBinding="{Binding Value}" SelectedItem="{Binding SelectedContact}" />
+            <ListView x:Name="ContactList" HasUnevenRows="True"  IsVisible="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" VerticalOptions="Center" >
+                                <Label Text="{Binding Contact_Name}" TextColor="OrangeRed" />
+                                <Label x:Name="LblField" Text="{Binding ContactText}" TextColor="OrangeRed" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

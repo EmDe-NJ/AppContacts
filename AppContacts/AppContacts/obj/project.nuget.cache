@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "PwqJ31APwLmUUkkE6ZjuWjj578g/JhuHEKTpB3E1D+7C3TEGkVUdI8+EU3OLfBwR0V9UcQDvyRDHOq71MhcDFQ==",
+  "dgSpecHash": "hPg6wB1TkRCjEIIXsZ192li33HPeK06CUDBAMzEFWVzXvTebDGD7+F0L2pRRksN1Nko9izcUne9ZbokLGIBmtQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\masoo\\source\\repos\\AppContacts\\AppContacts\\AppContacts\\AppContacts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\masoo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\masoo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\masoo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\masoo\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
     "C:\\Users\\masoo\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
     "C:\\Users\\masoo\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
@@ -16,7 +17,7 @@
     "C:\\Users\\masoo\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\masoo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\masoo\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+    "C:\\Users\\masoo\\.nuget\\packages\\xamarin.forms\\4.8.0.1560\\xamarin.forms.4.8.0.1560.nupkg.sha512"
   ],
   "logs": []
 }

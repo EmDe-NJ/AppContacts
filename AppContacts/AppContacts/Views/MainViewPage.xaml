@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:AppContacts.ViewModels" 
+             x:Class="AppContacts.Views.MainViewPage">
+    <ContentPage.BindingContext>
+        <ViewModels:BaseViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="listView" HasUnevenRows="True" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                                <Frame>
+                                    <StackLayout Orientation="Vertical">
+                                        <Label x:Name="Lbl1" Text="{Binding Contact_Name}" FontSize="Medium" HorizontalOptions="Start" LineBreakMode="WordWrap" />
+                                        <Label x:Name="Lbl2" Text="{Binding MyStringProperty}" FontSize="Medium" HorizontalOptions="Start" LineBreakMode="WordWrap" />
+                                        <Label Text="{Binding Contact_eMail}" FontSize="Medium">
+                                            <Label.Triggers>
+                                                <DataTrigger TargetType="Label" Binding="{Binding IsActive}" Value="false">
+                                                    <Setter Property="Text"  Value="Not Active" />
+                                                </DataTrigger>
+                                                <DataTrigger TargetType="Label" Binding="{Binding IsActive}" Value="true">
+                                                    <Setter Property="Text"  Value="Active" />
+                                                </DataTrigger>
+                                            </Label.Triggers>
+                                        </Label>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppContacts.Views;
+using System;
 using Xamarin.Forms;
 
 namespace AppContacts
@@ -35,6 +36,42 @@ namespace AppContacts
                             Command = navigateCommand,
                             CommandParameter = typeof(MainPage)
                         },
+                        
+                        new TextCell
+                        {
+                            Text = "Address or eMail FieldSwap",
+                            Command = navigateCommand,
+                            CommandParameter = typeof(MainPage)
+                        },
+
+                        new TextCell
+                        {
+                            Text = "Picker Example",
+                            Command = navigateCommand,
+                            CommandParameter = typeof(Page2)
+                        },
+                        
+                        new TextCell
+                        {
+                            Text = "Picker Example StackOverflow",
+                            Command = navigateCommand,
+                            CommandParameter = typeof(ViewPage1)
+                        },
+                        
+                        new TextCell
+                        {
+                            Text = "Picker Example C-Sharp Example",
+                            Command = navigateCommand,
+                            CommandParameter = typeof(MainPage2)
+                        },
+                        
+                        new TextCell
+                        {
+                            Text = "Picker Example Contacts Table",
+                            Command = navigateCommand,
+                            CommandParameter = typeof(Page2)
+                        },
+
                     }
                 }
             };

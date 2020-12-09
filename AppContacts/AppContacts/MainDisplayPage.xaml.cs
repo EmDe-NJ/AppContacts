@@ -1,8 +1,11 @@
 ﻿using AppContacts.Models;
 using AppContacts.SQLiteDb;
+using Newtonsoft.Json;
 using SQLite;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,8 +14,9 @@ namespace AppContacts
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainDisplayPage : ContentPage
     {
-        readonly SQLiteAsyncConnection _connection = DependencyService.Get<ISQLite>().GetConnection();
-        public MainDisplayPage()
+        readonly SQLiteAsyncConnection _connection = DependencyService.Get<ISQLite>().GetConnection();        
+                       
+            public MainDisplayPage()
         {
             InitializeComponent();
             this.BindingContext = this;
@@ -21,7 +25,11 @@ namespace AppContacts
         {
             base.OnAppearing();
             _connection.CreateTableAsync<Contacts>();
-            ReadData();
+
+
+            var list = _connection.Table<Contacts>().ToListAsync().Result;
+            CList = new ObservableCollection<Contacts>(list);
+            ContactList.ItemsSource = CList;
         }
         public ObservableCollection<Contacts> CList { get; set; }
         private void Save(object sender, EventArgs e)

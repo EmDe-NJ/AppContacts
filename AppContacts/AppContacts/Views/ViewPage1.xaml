@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppContacts.Views.ViewPage1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker x:Name="choose" SelectedIndexChanged="Choose_SelectedIndexChange">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Contact_Address</x:String>
+                        <x:String>Contact_eMail</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <ListView
+            x:Name="listview1"
+            HasUnevenRows="True"
+            ItemsSource="{Binding List_items}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                                <Label
+                                FontSize="Medium"
+                                LineBreakMode="WordWrap"
+                                Text="{Binding Contact_Name}" />
+                                <!--<Label
+                                IsVisible="{Binding Source={x:Reference root}, Path=BindingContext.selectedm}"
+                                LineBreakMode="WordWrap"
+                                Text="{Binding Contact_eMail}" />
+                                <Label
+                                IsVisible="{Binding Source={x:Reference root}, Path=BindingContext.selecteda}"
+                                LineBreakMode="WordWrap"
+                                Text="{Binding Contact_Address}" />-->
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

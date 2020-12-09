@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppContacts.Views.PageOne">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblTitle" Text="Click to Pick eMail or Address " Font="Medium" />
+            <Label x:Name="lbldisp"></Label>
+            <Picker x:Name="Contact_Address_eMail">
+                <Picker.Items>
+                    <x:String>Contact_Address</x:String>
+                    <x:String>Contact_eMail</x:String>
+                </Picker.Items>
+            </Picker>
+            <ListView x:Name="listView" HasUnevenRows="True" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+                            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" >
+                                <Frame >
+                                    <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                                        <Label Text="{Binding Contact_Name}" FontSize="Medium" LineBreakMode="WordWrap" />
+                                        <Label Text="{Binding Contact_Address}" IsVisible="{Binding Address_Visible}" LineBreakMode="WordWrap" />
+                                        <Label Text="{Binding Contact_eMail}" IsVisible="{Binding Email_Visible}" LineBreakMode="WordWrap" />
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

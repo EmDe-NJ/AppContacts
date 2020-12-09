@@ -11,23 +11,57 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DisplaySelectedPage.xaml.cs" />
     <Compile Remove="MainMenuPage.xaml.cs" />
+    <Compile Remove="MasterDetailPage1.xaml.cs" />
+    <Compile Remove="MasterDetailPage1Detail.xaml.cs" />
+    <Compile Remove="MasterDetailPage1Master.xaml.cs" />
+    <Compile Remove="MasterDetailPage1MasterMenuItem.cs" />
+    <Compile Remove="Models\Contacts_old.cs" />
     <Compile Remove="Page1.xaml.cs" />
+    <Compile Remove="PickTheField.cs" />
+    <Compile Remove="ViewModels\MainDisplayViewModel.cs" />
+    <Compile Remove="ViewModels\MyViewModel.cs" />
+    <Compile Remove="ViewModels\Page2ViewModel.cs" />
+    <Compile Remove="ViewModels\PageOneViewModel.cs" />
+    <Compile Remove="ViewModels\RootModel.cs" />
+    <Compile Remove="Views\FieldSwap.xaml.cs" />
+    <Compile Remove="Views\MainDisplayView.cs" />
+    <Compile Remove="Views\PageOne.xaml.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="DisplaySelectedPage.xaml" />
     <EmbeddedResource Remove="MainMenuPage.xaml" />
+    <EmbeddedResource Remove="MasterDetailPage1.xaml" />
+    <EmbeddedResource Remove="MasterDetailPage1Detail.xaml" />
+    <EmbeddedResource Remove="MasterDetailPage1Master.xaml" />
     <EmbeddedResource Remove="Page1.xaml" />
+    <EmbeddedResource Remove="Views\FieldSwap.xaml" />
+    <EmbeddedResource Remove="Views\PageOne.xaml" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
-    <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="MainDisplayPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MainPage2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MainViewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Page2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ViewPage1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
